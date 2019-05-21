@@ -120,6 +120,4 @@ menu=$(cat << EOL
 EOL
 )
 
-n_menu=$(echo "$menu" | wc -l)
-line=$(($RANDOM % $n_menu + 1))
-echo "$menu" | sed -n "${line}p" | cut -d, -f1
+echo "$menu" | shuf -n1 | cut -d, -f1
