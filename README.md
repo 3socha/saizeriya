@@ -1,6 +1,6 @@
 # saizeriya
 
-Display menu of the "Saizeriya" at random.
+Print menu of Saizeriya at random.
 
 ## Installation
 
@@ -17,7 +17,7 @@ $ saizeriya
 半熟卵のミートソースボロニア風
 ```
 
-## Uninsatll
+## Uninstall
 
 ```sh
 $ rm /usr/local/bin/saizeriya
@@ -29,4 +29,4 @@ Using [Saizeriya_1000yen](https://github.com/marushosummers/Saizeriya_1000yen)'s
 
 ## License
 
-MIT
+MIT License
