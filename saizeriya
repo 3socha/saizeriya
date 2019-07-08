@@ -117,6 +117,8 @@ menu=$(cat << EOL
 ミルクジェラート,sidedish,dessert,199,100,0.1
 シチリア産レモンのソルベ,sidedish,dessert,199,127,0.0
 チョコレートケーキ,sidedish,dessert,299,166,0.1
+フレッシュトマトのスパゲッティ,meal,pasta,499,695,3.7
+やわらかポークリブのオーブン焼き(バックリブ),sidedish,steak,799,438,4.5
 EOL
 )
 
