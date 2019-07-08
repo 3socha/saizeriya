@@ -1,8 +1,38 @@
 #!/usr/bin/env bash
-set -u
+set -eu
+
+usage() {
+  cat << EOL >&2
+Usage:
+  $0 [Options]
+
+Options:
+  -a    display all menu
+  -h    display this help and exit
+  -l    use a long listing format
+EOL
+  exit
+}
+
+while getopts ahl OPT; do
+  case $OPT in
+    a)
+      ALL=1
+      ;;
+    h)
+      usage
+      ;;
+    l)
+      LONG=1
+      ;;
+    \?)
+      usage
+      ;;
+  esac
+done
 
 # Name,Category,Type,Price,Calorie,Salt
-menu=$(cat << EOL
+MENU=$(cat << EOL
 アスパラガスの彩りサラダ ビスマルク風(季節限定),sidedish,salad,399,265,1.7
 小エビのサラダ,sidedish,salad,349,115,1.3
 やわらかチキンのサラダ,sidedish,salad,299,134,1.2
@@ -122,4 +152,16 @@ menu=$(cat << EOL
 EOL
 )
 
-echo "$menu" | shuf -n1 | cut -d, -f1
+if [ -n "${ALL+x}" ]; then
+  if [ -n "${LONG+x}" ]; then
+    echo "${MENU}"
+  else
+    echo "${MENU}" | awk -F, '{print $1}'
+  fi
+else
+  if [ -n "${LONG+x}" ]; then
+    echo "${MENU}" | shuf -n1
+  else
+    echo "${MENU}" | shuf -n1 | awk -F, '{print $1}'
+  fi
+fi
