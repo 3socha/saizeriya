@@ -2,7 +2,7 @@
 set -eu
 
 usage() {
-  cat << EOL >&2
+  cat << EOL
 Usage:
   $0 [Options]
 
