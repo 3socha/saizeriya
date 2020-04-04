@@ -165,7 +165,7 @@ MENU=$(cat << EOL
 チョコレートケーキ,sidedish,dessert,299,166,0.1
 コーヒーゼリー(ミルクアイスのせ),sidedish,dessert,299,162,0.1
 ミルクアイスのせシナモンフォッカチオ,sidedish,dessert,319,346,0.9
-やわらかお肉とごろごろ野菜のポトフ(季節限定),meal,potaufeu,899,572,2.4
+アスパラガスのアーリオ・オーリオ(季節限定),meal,pasta,499,756,2.5
 EOL
 )
 
