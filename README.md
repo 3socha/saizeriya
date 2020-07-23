@@ -23,10 +23,6 @@ $ saizeriya
 $ rm /usr/local/bin/saizeriya
 ```
 
-## Menu data
-
-Using [Saizeriya_1000yen](https://github.com/marushosummers/Saizeriya_1000yen)'s data. Thanks!
-
 ## License
 
 MIT License
