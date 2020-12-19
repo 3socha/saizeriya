@@ -5,7 +5,7 @@ Print menu of Saizeriya at random.
 ## Installation
 
 ```sh
-$ curl -O https://raw.githubusercontent.com/horo17/saizeriya/master/saizeriya
+$ curl -O https://raw.githubusercontent.com/3socha/saizeriya/master/saizeriya
 $ install -m 755 saizeriya /usr/local/bin/saizeriya
 $ rm saizeriya
 ```
