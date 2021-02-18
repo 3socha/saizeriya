@@ -154,7 +154,10 @@ TP03,ガルムソース&野菜ペースト,sidedish,topping,150,99,1.1
 TP04,野菜ペースト,sidedish,topping,100,72,0.3
 TP06,やみつきスパイス,sidedish,topping,50,6,1.4
 TP07,フルーツソース(カシス&ブルーベリー),sidedish,topping,100,40,0.0
-FC01,皮つき新じゃがのチーズグラタン(季節限定),meal,barbecue,400,427,2.5
+FC01,カチョエペペ(季節限定),meal,pasta,400,691,3.1
+FC02,ポヴェレッロ(季節限定),meal,pasta,450,775,3.3
+FC51,カチョエペペ(大盛・季節限定),meal,pasta,600,919,4.2
+FC52,ポヴェレッロ(大盛・季節限定),meal,pasta,650,1002,4.4
 EOL
 )
 
